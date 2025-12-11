@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Samson & Jesus — Kid Storybook</title>
+<style>
+:root{
+  --page-w: 900px;
+  --page-h: 600px;
+  --paper-bg: #fffef9;
+  --text-color: #2b2b2b;
+  --shadow: rgba(0,0,0,0.15);
+}
+body{
+  margin:20px;
+  background: linear-gradient(180deg,#e0f7ff 0%, #fff 70%);
+  font-family: "Segoe UI", sans-serif;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+h1{color:#8a4b2a;}
+.viewer{display:flex; flex-direction:column; align-items:center;}
+.page{
+  width: var(--page-w);
+  height: var(--page-h);
+  background: var(--paper-bg);
+  box-shadow: 0 10px 30px var(--shadow);
+  border-radius: 14px;
+  padding: 30px;
+  box-sizing:border-box;
+  margin-bottom: 16px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+}
+.illustration{
+  height:45%;
+  background:#fffaf2;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:12px;
+  margin-bottom:12px;
+}
+.illustration svg{width:50%; animation: float 6s ease-in-out infinite;}
+@keyframes float{
+  0%{transform:translateY(0);}
+  50%{transform:translateY(-6px);}
+  100%{transform:translateY(0);}
+}
+.text{
+  font-size:18px;
+  line-height:1.5;
+  min-height: 45%;
+  background: #fff;
+  padding:12px;
+  border-radius:8px;
+  overflow-y:auto;
+}
+.controls{display:flex; gap:8px; margin:12px;}
+button{
+  padding:8px 12px;
+  border-radius:8px;
+  border:1px solid #e0d7cc;
+  background: linear-gradient(180deg,#fff,#f7f7f7);
+  cursor:pointer;
+}
+@media print{
+  body{background:white; margin:0;}
+  .controls{display:none;}
+  .page{page-break-after: always; box-shadow:none; border-radius:0; width:100%; height:auto;}
+  .text{font-size:16px;}
+}
+</style>
+</head>
+<body>
+<h1>Samson & Jesus — Kid Storybook</h1>
+
+<div class="viewer">
+
+<!-- Page 0 -->
+<div class="page" id="page0">
+  <div class="illustration" aria-hidden="true">
+    <svg viewBox="0 0 200 160">
+      <circle cx="100" cy="40" r="18" fill="#fff9f0" stroke="#8a4b2a" stroke-width="2"/>
+      <ellipse cx="100" cy="100" rx="44" ry="38" fill="#fff9f0" stroke="#8a4b2a" stroke-width="2"/>
+      <path d="M76 34 q24 -28 48 0" fill="#8a4b2a"/>
+    </svg>
+  </div>
+  <div class="text" id="text0">
+Samsons my name I was born with long hair
+I was there with strength that’s unfair
+Birthed in the town of Zorah
+Coming from my father Manoah
+  </div>
+</div>
+
+<!-- Page 1 -->
+<div class="page" id="page1">
+  <div class="illustration">
+    <svg viewBox="0 0 200 160">
+      <path d="M52 80 q48 -60 96 0" stroke="#8a4b2a" stroke-width="8" fill="none"/>
+    </svg>
+  </div>
+  <div class="text" id="text1">
+My lucious locks had my power
+If it was cut off it would make me a flower
+When I fought the Philistines
+I got the jaw of a donkey and beat them
+  </div>
+</div>
+
+<!-- Page 2 -->
+<div class="page" id="page2">
+  <div class="illustration">
+    <svg viewBox="0 0 200 160">
+      <rect x="30" y="40" width="140" height="80" fill="#fbe4c7" stroke="#8a4b2a"/>
+    </svg>
+  </div>
+  <div class="text" id="text2">
+My hair would mark my vow so true
+A promise made of what I’d do
+As long as no blade ever came near
+God’s strength through me would still appear 
+Then the Lord came to me and said
+
+“Be careful of who you call your friend 
+They could bring you to your end”
+  </div>
+</div>
+
+<!-- Page 3 -->
+<div class="page" id="page3">
+  <div class="illustration">
+    <svg viewBox="0 0 200 160">
+      <rect x="20" y="50" width="160" height="70" fill="#d0f0d0" stroke="#4b8a4b"/>
+    </svg>
+  </div>
+  <div class="text" id="text3">
+The Philistines ruled the land with fear
+Oppressing Israel year by year
+And God had chosen me to stand
+As judge and strength of Israel’s land
+  </div>
+</div>
+
+<!-- Page 4 -->
+<div class="page" id="page4">
+  <div class="illustration">
+    <svg viewBox="0 0 200 160">
+      <rect x="30" y="40" width="140" height="80" fill="#f0e4ff" stroke="#6b4b8a"/>
+    </svg>
+  </div>
+  <div class="text" id="text4">
+He told my parents clear and true
+What I must follow and what I must do
+No win, no blade upon my head 
+A holy life was what He said
+
+For what I was given to protect
+Would impact more than I could expect
+  </div>
+</div>
+
+<!-- Page 5 -->
+<div class="page" id="page5">
+  <div class="illustration">
+    <svg viewBox="0 0 200 160">
+      <rect x="30" y="50" width="140" height="60" fill="#fff0f0" stroke="#8a4b4b"/>
+    </svg>
+  </div>
+  <div class="text" id="text5">
+I walk the lands and people cower
+thanking myself for this holy power
+A roaring lion stood in my way 
+I tore it apart with my strength that day
+
+Now I knew what God meant when he said
+Be careful of who you call your friend 
+They could bring you to your end
+  </div>
+</div>
+
+<!-- Page 6 -->
+<div class="page" id="page6">
+  <div class="illustration">
+    <svg viewBox="0 0 200 160">
+      <path d="M60 110 q40 -40 80 0" stroke="#8a4b2a" stroke-width="8" fill="none"/>
+    </svg>
+  </div>
+  <div class="text" id="text6">
+Yet though my strength was from above
+I embraced myself instead of God's love
+
+I fell for false idols from enemy lands
+Ignoring the truth from God’s hands.
+  </div>
+</div>
+
+<!-- Page 7 -->
+<div class="page" id="page7">
+  <div class="illustration">
+    <svg viewBox="0 0 200 160">
+      <rect x="40" y="50" width="120" height="60" fill="#fff7d0" stroke="#8a7b2a"/>
+    </svg>
+  </div>
+  <div class="text" id="text7">
+Delilah came with her tempting tone,
+Asking where the source of my strength was sown
+I toyed and teased it, but eventually gave in,
+Unveiling the truth that exposed my sin
+I said, “if my hair is cut, my strength is no more.”
+And my downfall was at my front door
+  </div>
+</div>
+
+<!-- Page 8 -->
+<div class="page" id="page8">
+  <div class="illustration">
+    <svg viewBox="0 0 200 160">
+      <rect x="20" y="50" width="160" height="70" fill="#e0ffe0" stroke="#4b8a4b"/>
+    </svg>
+  </div>
+  <div class="text" id="text8">
+I was captured and blind
+All I asked God was for a sign
+
+While I was broken, God heard my cries
+He let my hair grow as the months passed by
+
+Then I prayed to Him, “Lord let it be
+Give your strength to me once more, So I can show the power You gave me.”
+
+The temple collapsed in the Lords name
+The enemies fell, and I did too,
+God freed Israel, something I couldn’t do
+  </div>
+</div>
+
+<!-- Page 9 -->
+<div class="page" id="page9">
+  <div class="illustration">
+    <svg viewBox="0 0 200 160">
+      <rect x="20" y="50" width="160" height="70" fill="#fff7ff" stroke="#8a2b8a"/>
+    </svg>
+  </div>
+  <div class="text" id="text9">
+But then came another child who was pure and bright
+Born without sin, clothed in Heaven's light
+He walked with love, healed the weak,
+Fed the hungry, cured the bleak
+
+While Samson's hair displayed his might
+It caused him to lose his fight
+
+Yet Jesus obeyed his Father above, 
+A strength of spirit, a life of love. 
+
+Jesus was betrayed by his own friend
+But will love him until his very end.
+
+He died not for the sin of His own
+But for the seeds that Adam had sown
+And when He rose, the tomb was bare, 
+A stronger Samson, beyond compare
+  </div>
+</div>
+
+</div>
+
+<div class="controls">
+  <button onclick="prevPage()">◀ Prev</button>
+  <button onclick="nextPage()">Next ▶</button>
+  <button onclick="firstPage()">⤒ First</button>
+  <button onclick="lastPage()">Last ⤓</button>
+  <button onclick="window.print()">Print / PDF</button>
+</div>
+
+<script>
+let currentPage = 0;
+const totalPages = 10;
+function showPage(n){
+  for(let i=0;i<totalPages;i++){
+    document.getElementById("page"+i).style.display = (i===n)?"flex":"none";
+  }
+}
+function nextPage(){ currentPage = Math.min(currentPage+1,totalPages-1); showPage(currentPage);}
+function prevPage(){ currentPage = Math.max(currentPage-1,0); showPage(currentPage);}
+function firstPage(){ currentPage=0; showPage(currentPage);}
+function lastPage(){ currentPage=totalPages-1; showPage(currentPage);}
+showPage(currentPage);
+</script>
+
+</body>
+</html>
