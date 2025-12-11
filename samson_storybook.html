@@ -5,91 +5,78 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Samson & Jesus — Kid Storybook</title>
 <style>
-:root{
-  --page-w: 900px;
-  --page-h: 600px;
-  --paper-bg: #fffef9;
-  --text-color: #2b2b2b;
-  --shadow: rgba(0,0,0,0.15);
-}
-body{
-  margin:20px;
-  background: linear-gradient(180deg,#e0f7ff 0%, #fff 70%);
+body {
+  margin: 20px;
   font-family: "Segoe UI", sans-serif;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
+  background: #f0f9ff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-h1{color:#8a4b2a;}
-.viewer{display:flex; flex-direction:column; align-items:center;}
-.page{
-  width: var(--page-w);
-  height: var(--page-h);
-  background: var(--paper-bg);
-  box-shadow: 0 10px 30px var(--shadow);
+h1 { color: #8a4b2a; }
+.viewer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page {
+  width: 900px;
+  height: 600px;
+  background: #fffef9;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
   border-radius: 14px;
   padding: 30px;
-  box-sizing:border-box;
   margin-bottom: 16px;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.illustration{
-  height:45%;
-  background:#fffaf2;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  border-radius:12px;
-  margin-bottom:12px;
+.illustration {
+  height: 45%;
+  background: #fffaf2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  margin-bottom: 12px;
 }
-.illustration svg{width:50%; animation: float 6s ease-in-out infinite;}
-@keyframes float{
-  0%{transform:translateY(0);}
-  50%{transform:translateY(-6px);}
-  100%{transform:translateY(0);}
-}
-.text{
-  font-size:18px;
-  line-height:1.5;
+.text {
+  font-size: 18px;
+  line-height: 1.5;
   min-height: 45%;
-  background: #fff;
-  padding:12px;
-  border-radius:8px;
-  overflow-y:auto;
+  padding: 12px;
+  overflow-y: auto;
 }
-.controls{display:flex; gap:8px; margin:12px;}
-button{
-  padding:8px 12px;
-  border-radius:8px;
-  border:1px solid #e0d7cc;
+.controls { display: flex; gap: 8px; margin: 12px; }
+button {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #e0d7cc;
   background: linear-gradient(180deg,#fff,#f7f7f7);
-  cursor:pointer;
+  cursor: pointer;
 }
-@media print{
-  body{background:white; margin:0;}
-  .controls{display:none;}
-  .page{page-break-after: always; box-shadow:none; border-radius:0; width:100%; height:auto;}
-  .text{font-size:16px;}
+@media print {
+  body { background:white; margin:0; }
+  .controls { display:none; }
+  .page { page-break-after: always; box-shadow:none; border-radius:0; width:100%; height:auto; }
+  .text { font-size:16px; }
 }
 </style>
 </head>
 <body>
 <h1>Samson & Jesus — Kid Storybook</h1>
-
 <div class="viewer">
 
 <!-- Page 0 -->
 <div class="page" id="page0">
-  <div class="illustration" aria-hidden="true">
-    <svg viewBox="0 0 200 160">
-      <circle cx="100" cy="40" r="18" fill="#fff9f0" stroke="#8a4b2a" stroke-width="2"/>
-      <ellipse cx="100" cy="100" rx="44" ry="38" fill="#fff9f0" stroke="#8a4b2a" stroke-width="2"/>
-      <path d="M76 34 q24 -28 48 0" fill="#8a4b2a"/>
+  <div class="illustration">
+    <svg width="200" height="160">
+      <circle cx="100" cy="50" r="25" fill="#ffe0b3" stroke="#8a4b2a" stroke-width="2"/>
+      <rect x="80" y="75" width="40" height="60" fill="#ffe0b3" stroke="#8a4b2a"/>
+      <path d="M70 45 q60 -40 60 0" fill="#8a4b2a"/>
     </svg>
   </div>
-  <div class="text" id="text0">
+  <div class="text">
 Samsons my name I was born with long hair
 I was there with strength that’s unfair
 Birthed in the town of Zorah
@@ -100,11 +87,15 @@ Coming from my father Manoah
 <!-- Page 1 -->
 <div class="page" id="page1">
   <div class="illustration">
-    <svg viewBox="0 0 200 160">
-      <path d="M52 80 q48 -60 96 0" stroke="#8a4b2a" stroke-width="8" fill="none"/>
+    <svg width="200" height="160">
+      <circle cx="50" cy="50" r="15" fill="#ffe0b3"/>
+      <circle cx="150" cy="50" r="15" fill="#ff9999"/>
+      <rect x="45" y="65" width="10" height="50" fill="#ffe0b3"/>
+      <rect x="145" y="65" width="10" height="50" fill="#ff9999"/>
+      <path d="M50 50 q40 -40 80 0" stroke="#8a4b2a" stroke-width="4" fill="none"/>
     </svg>
   </div>
-  <div class="text" id="text1">
+  <div class="text">
 My lucious locks had my power
 If it was cut off it would make me a flower
 When I fought the Philistines
@@ -115,11 +106,13 @@ I got the jaw of a donkey and beat them
 <!-- Page 2 -->
 <div class="page" id="page2">
   <div class="illustration">
-    <svg viewBox="0 0 200 160">
-      <rect x="30" y="40" width="140" height="80" fill="#fbe4c7" stroke="#8a4b2a"/>
+    <svg width="200" height="160">
+      <rect x="50" y="40" width="100" height="80" fill="#f7e0ff" stroke="#8a4b8a"/>
+      <circle cx="100" cy="80" r="20" fill="#ffe0b3" stroke="#8a4b2a"/>
+      <path d="M80 70 q40 -30 40 0" fill="#8a4b2a"/>
     </svg>
   </div>
-  <div class="text" id="text2">
+  <div class="text">
 My hair would mark my vow so true
 A promise made of what I’d do
 As long as no blade ever came near
@@ -134,11 +127,12 @@ They could bring you to your end”
 <!-- Page 3 -->
 <div class="page" id="page3">
   <div class="illustration">
-    <svg viewBox="0 0 200 160">
+    <svg width="200" height="160">
       <rect x="20" y="50" width="160" height="70" fill="#d0f0d0" stroke="#4b8a4b"/>
+      <circle cx="100" cy="80" r="20" fill="#ffe0b3" stroke="#8a4b2a"/>
     </svg>
   </div>
-  <div class="text" id="text3">
+  <div class="text">
 The Philistines ruled the land with fear
 Oppressing Israel year by year
 And God had chosen me to stand
@@ -149,11 +143,12 @@ As judge and strength of Israel’s land
 <!-- Page 4 -->
 <div class="page" id="page4">
   <div class="illustration">
-    <svg viewBox="0 0 200 160">
+    <svg width="200" height="160">
       <rect x="30" y="40" width="140" height="80" fill="#f0e4ff" stroke="#6b4b8a"/>
+      <circle cx="100" cy="80" r="20" fill="#ffe0b3"/>
     </svg>
   </div>
-  <div class="text" id="text4">
+  <div class="text">
 He told my parents clear and true
 What I must follow and what I must do
 No win, no blade upon my head 
@@ -167,11 +162,13 @@ Would impact more than I could expect
 <!-- Page 5 -->
 <div class="page" id="page5">
   <div class="illustration">
-    <svg viewBox="0 0 200 160">
-      <rect x="30" y="50" width="140" height="60" fill="#fff0f0" stroke="#8a4b4b"/>
+    <svg width="200" height="160">
+      <circle cx="100" cy="80" r="25" fill="#ffe0b3"/>
+      <path d="M75 45 q50 -50 50 0" stroke="#8a4b2a" stroke-width="4" fill="none"/>
+      <rect x="90" y="105" width="20" height="40" fill="#ffe0b3"/>
     </svg>
   </div>
-  <div class="text" id="text5">
+  <div class="text">
 I walk the lands and people cower
 thanking myself for this holy power
 A roaring lion stood in my way 
@@ -186,11 +183,12 @@ They could bring you to your end
 <!-- Page 6 -->
 <div class="page" id="page6">
   <div class="illustration">
-    <svg viewBox="0 0 200 160">
-      <path d="M60 110 q40 -40 80 0" stroke="#8a4b2a" stroke-width="8" fill="none"/>
+    <svg width="200" height="160">
+      <rect x="30" y="40" width="140" height="80" fill="#fff0f0" stroke="#8a4b4b"/>
+      <circle cx="100" cy="70" r="20" fill="#ffe0b3"/>
     </svg>
   </div>
-  <div class="text" id="text6">
+  <div class="text">
 Yet though my strength was from above
 I embraced myself instead of God's love
 
@@ -202,11 +200,13 @@ Ignoring the truth from God’s hands.
 <!-- Page 7 -->
 <div class="page" id="page7">
   <div class="illustration">
-    <svg viewBox="0 0 200 160">
+    <svg width="200" height="160">
       <rect x="40" y="50" width="120" height="60" fill="#fff7d0" stroke="#8a7b2a"/>
+      <circle cx="70" cy="80" r="15" fill="#ffe0b3"/>
+      <circle cx="130" cy="80" r="15" fill="#ffe0b3"/>
     </svg>
   </div>
-  <div class="text" id="text7">
+  <div class="text">
 Delilah came with her tempting tone,
 Asking where the source of my strength was sown
 I toyed and teased it, but eventually gave in,
@@ -219,11 +219,13 @@ And my downfall was at my front door
 <!-- Page 8 -->
 <div class="page" id="page8">
   <div class="illustration">
-    <svg viewBox="0 0 200 160">
+    <svg width="200" height="160">
       <rect x="20" y="50" width="160" height="70" fill="#e0ffe0" stroke="#4b8a4b"/>
+      <circle cx="100" cy="80" r="25" fill="#ffe0b3"/>
+      <path d="M80 60 q40 -40 40 0" stroke="#8a4b2a" stroke-width="3" fill="none"/>
     </svg>
   </div>
-  <div class="text" id="text8">
+  <div class="text">
 I was captured and blind
 All I asked God was for a sign
 
@@ -242,11 +244,13 @@ God freed Israel, something I couldn’t do
 <!-- Page 9 -->
 <div class="page" id="page9">
   <div class="illustration">
-    <svg viewBox="0 0 200 160">
-      <rect x="20" y="50" width="160" height="70" fill="#fff7ff" stroke="#8a2b8a"/>
+    <svg width="200" height="160">
+      <circle cx="100" cy="70" r="25" fill="#ffe0b3"/>
+      <path d="M50 90 q50 -50 100 0" stroke="#8a4b2a" stroke-width="4" fill="none"/>
+      <rect x="90" y="95" width="20" height="50" fill="#f0f0ff"/>
     </svg>
   </div>
-  <div class="text" id="text9">
+  <div class="text">
 But then came another child who was pure and bright
 Born without sin, clothed in Heaven's light
 He walked with love, healed the weak,
